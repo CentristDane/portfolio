@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
     <meta name="keywords" content="front-end developer, front-end development, web designer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <style>
         .woocommerce-product-gallery {
             opacity: 1 !important
@@ -98,14 +99,14 @@
                     </p>
                 </footer>
             </blockquote>
-        </section><a class="button action" href="/about/" title="Discover Dane's Skills and Workflow">About Dane<i class="fa fa-chevron-circle-right"></i></a></main>
+        </section><a class="button action" id="fuck" title="Discover Dane's Skills and Workflow">About Dane<i class="fa fa-chevron-circle-right"></i></a></main>
     <div class="footer group">
         <div class="links">
             <div class="third">
                 <div class="avatar social"> <img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19954871_334924766938799_5402780116306624512_n.jpg" width="70" height="70" /></div>
                 <div class="bio">
                     <p class="bio-info"> Experience Full-Stack Developer and Political Consultant.</p>
-                    <br /> Available February 2018. <a class="cta" href="/hire/" title="Enquire about hiring Dane Sherrets">Hire Now <i class="fa fa-angle-double-right"></i></a></p>
+                    <br /> Available February 2018. <a class="cta" href="mailto:danesherrets1990@gmail.com" title="Enquire about hiring Dane Sherrets">Hire Now <i class="fa fa-angle-double-right"></i></a></p>
                 </div>
             </div>
             <ul class="third social-links">
@@ -125,55 +126,83 @@
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                   
-                        <img class="pic" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19954871_334924766938799_5402780116306624512_n.jpg">
-                  <div class="bio">
-                    <br>
-                    <p style="color:black">After having worked for a Republican Congressman and on a Democratic campaign, Dane realized that both parties are ill-equipped to deal with our nation's problems. Dane worked with a number of organizations in the political reform space before joining The Centrist Project in 2015. Dane is now learning to become a web developer to help independents gain the digital tools they need.</p>
+                    <img class="pic" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19954871_334924766938799_5402780116306624512_n.jpg">
+                    <div class="bio">
+                        <br>
+                        <p style="color:black">After having worked for a Republican Congressman and on a Democratic campaign, Dane realized that both parties are ill-equipped to deal with our nation's problems. Dane worked with a number of organizations in the political reform space before joining The Centrist Project in 2015. Dane is now learning to become a web developer to help independents gain the digital tools they need.</p>
                     </div>
                 </div>
             </div>
-
-                
-            <img class="pic" src="https://res.cloudinary.com/uniteamerica/image/fetch/w_579,h_383,c_fill,g_face,f_auto/https://d3n8a8pro7vhmx.cloudfront.net/centristmovement/pages/3711/meta_images/original/image1.jpeg?1519228465" alt="Terry Hayes">
-            <div class="bio">
-                <h2>Gov. Bill Walker - Governor</h2>
-                <h4>Incumbent</h4>
-                <p>Bill Walker was elected on a unity ticket with his former Democratic opponent in 2014 and serves as the only independent governor in the country
-                    <p>
-                        <a class="profile" href="https://www.uniteamerica.org/gov_bill_walker">
-                            <button class="button">Learn More</button>
-                        </a>
-            </div>
-
-
-
             <script type="text/javascript">
-            // Get the modal
-            var modal = document.getElementById('myModal');
+            /// Alert box
+       
+            swal({
+                title: "Updated Site Coming Soon!",
+                icon:"info",
+                text:"Currently building a new site with React JS. Will launch by April 21st!",
+                button:"Got it, I want to see the original site!",
+                className: "pop"
+            });
 
-            // Get the button that opens the modal
+            ///// End alert 
+            
+            ///about 
+
+            var about = document.getElementById('fuck');
             var btn = document.getElementById("myBtn");
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on the button, open the modal 
             btn.onclick = function() {
-                modal.style.display = "block";
+                swal({
+                title: "About Dane",
+                text:"After having worked for a Republican Congressman and on a Democratic campaign, Dane realized that both parties are ill-equipped to deal with our nation's problems. Dane worked with a number of organizations in the political reform space before joining The Centrist Project in 2015. Dane is now learning to become a web developer to help independents gain the digital tools they need.",
+                button:"Very interesting!",
+                html:true,
+                className: "pop",
+               
+            });
+
             }
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
+            about.onclick = function() {
+                swal({
+                title: "About Dane",
+                text:"After having worked for a Republican Congressman and on a Democratic campaign, Dane realized that both parties are ill-equipped to deal with our nation's problems. Dane worked with a number of organizations in the political reform space before joining The Centrist Project in 2015. Dane is now learning to become a web developer to help independents gain the digital tools they need.",
+                button:"Very interesting!",
+                html:true,
+                className: "pop",
+               
+            });
+
             }
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
+
+            // Get the modal
+
+
+            // var modal = document.getElementById('myModal');
+
+            // // Get the button that opens the modal
+            // var btn = document.getElementById("myBtn");
+
+            // // Get the <span> element that closes the modal
+            // var span = document.getElementsByClassName("close")[0];
+
+            // // When the user clicks on the button, open the modal 
+            // btn.onclick = function() {
+            //     modal.style.display = "block";
+            // }
+
+            // // When the user clicks on <span> (x), close the modal
+            // span.onclick = function() {
+            //     modal.style.display = "none";
+            // }
+
+            // // When the user clicks anywhere outside of the modal, close it
+            // window.onclick = function(event) {
+            //     if (event.target == modal) {
+            //         modal.style.display = "none";
+            //     }
+            // }
             </script>
             <nav class="third">
                 <dl>
@@ -185,7 +214,7 @@
                     <dd>Read client recommendations</dd>
                     <dt><a href="#">Contact</a></dt>
                     <dd>Send a general message</dd>
-                    <dt><a href="#">Hire Dane</a></dt>
+                    <dt><a href="mailto:danesherrets1990@gmail.com">Hire Dane</a></dt>
                     <dd>Enquire about hiring Dane</dd>
                 </dl>
             </nav>

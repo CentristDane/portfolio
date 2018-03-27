@@ -2854,6 +2854,19 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 }
 
 /* Modal Content/Box */
+.pop {
+  background: #b9bbbe;
+  color: green;
+}
+
+.swal-overlay {
+  background-color: rgba(75, 95, 102, 0.90);
+}
+
+.swal-button{
+  background-color: #b2d9ea;
+  color: black;
+}
 
   .pic {
         height: 25%;
@@ -2888,3 +2901,7 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*Testing the pop-up*/
+
+
