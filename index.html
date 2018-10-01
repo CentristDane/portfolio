@@ -11,19 +11,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
     <meta name="keywords" content="front-end developer, front-end development, web designer" />
-    <!-- <style>
-        .woocommerce-product-gallery {
-            opacity: 1 !important
-        }
-        </style> -->
+  
     </noscript>
-    <!--[if lt IE 9]> <script src="https://ianlunn.co.uk/wp-content/themes/ianlunn2015/js/old-ie.js" media="all"></script> <![endif]-->
+
 </head>
 
 <body class="home page-template page-template-front page-template-front-php page page-id-8 page-parent">
     <header id="header" role="banner">
         <div class="group">
-            <a class="logo" href="https://ianlunn.co.uk/">
+            <a class="logo" href="https://danesherrets.com">
                 <!--   ////////Mess with this//////////////////  -->
                 <svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
                     <title>Dane Sherrets</title>
@@ -64,8 +60,8 @@
                     <h3>Votify</h3>
                     <p>I need to work on this </p>
                 </li>
-                <li><a href="https://shrouded-atoll-67542.herokuapp.com/" style="background-color: #000"><img src="./images/bsdetect.png" alt="B.S Detect" /></a>
-                    <h3>B.S Detect</h3></li>
+                <li><a href="https://time-bender.herokuapp.com/" style="background-color: #000"><img src="./images/timebender.png" alt="B.S Detect" /></a>
+                    <h3>TimeBender</h3></li>
                 <li><a href="https://blbaker1989.github.io/HitchHyker/index.html" style="background-color: #33363B"><img src="./images/HitchHyker.png" alt="CSS3 Foundations" /></a>
                     <h3>HytchHyker</h3></li>
                 <li><a href="https://www.scribd.com/document/328732199/Stop-Drop-And-Roll-Off-The-Challenge-of-Voting-in-Local-Elections" style="background-color: #f6f6f6"><img src="./images/whitepaper.png" alt="Greedy Peg" /></a>
@@ -98,14 +94,14 @@
                     </p>
                 </footer>
             </blockquote>
-        </section><a class="button action" href="/about/" title="Discover Dane's Skills and Workflow">About Dane<i class="fa fa-chevron-circle-right"></i></a></main>
+        </section><a class="button action" id="myBtn2" href="#" title="Discover Dane's Skills and Workflow">About Dane<i class="fa fa-chevron-circle-right"></i></a></main>
     <div class="footer group">
         <div class="links">
             <div class="third">
-                <div class="avatar social"> <img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19954871_334924766938799_5402780116306624512_n.jpg" width="70" height="70" /></div>
+                <div class="avatar social"> <img src="./images/bio_pic.jpeg" width="70" height="70" /></div>
                 <div class="bio">
-                    <p class="bio-info"> Experience Full-Stack Developer and Political Consultant.</p>
-                    <br /> Available February 2018. <a class="cta" href="/hire/" title="Enquire about hiring Dane Sherrets">Hire Now <i class="fa fa-angle-double-right"></i></a></p>
+                    <p class="bio-info"> Experienced Full-Stack Developer and Political Consultant.</p>
+                    <br /> Available November 2018. <a class="cta" href="https://www.linkedin.com/in/dane-sherrets-7a049973/" title="Inquire about hiring Dane Sherrets">Hire Now <i class="fa fa-angle-double-right"></i></a></p>
                 </div>
             </div>
             <ul class="third social-links">
@@ -114,7 +110,7 @@
                 </li>
                 <li> <a href="https://github.com/CentristDane/" target="_blank"><i class="fa fa-github"></i></a>
                     <p>View <a href="https://github.com/CentristDane/" target="_blank">@DaneSherrets</a> on GitHub for political apps and projects
-                        <li class="rss"> <a href="https://uk.linkedin.com/in/ianlunn/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <li class="rss"> <a href="https://www.linkedin.com/in/dane-sherrets-7a049973/" target="_blank"><i class="fa fa-linkedin"></i></a>
                             <p>View my <a href="https://www.linkedin.com/in/dane-sherrets-7a049973/" target="_blank">LinkedIn profile</a></p>
                         </li>
             </ul>
@@ -129,7 +125,7 @@
                         <img class="pic" src="./images/bio_pic.jpeg">
                   <div class="bio">
                     <br>
-                    <p style="color:black">After having worked for a Republican Congressman and on a Democratic campaign, Dane realized that both parties are ill-equipped to deal with our nation's problems. Dane worked with a number of organizations in the political reform space before joining The Centrist Project in 2015. Dane is now learning to become a web developer to help independents gain the digital tools they need.</p>
+                    <h3 style="color:black">After having worked for a Republican Congressman and on a Democratic campaign, Dane realized that both parties are ill-equipped to deal with our nation's problems. Dane worked with a number of organizations in the political reform space before joining The Centrist Project in 2015. Dane is now learning to become a web developer to help independents gain the digital tools they need.</h3>
                     </div>
                 </div>
             </div>
@@ -160,6 +156,15 @@
                     modal.style.display = "none";
                 }
             }
+
+            var btn2 = document.getElementById("myBtn2");
+            // Get the <span> element that closes the modal
+      
+            // When the user clicks on the button, open the modal 
+            btn2.onclick = function() {
+                modal.style.display = "block";
+            }
+          
             </script>
             <nav class="third">
                 <dl>
